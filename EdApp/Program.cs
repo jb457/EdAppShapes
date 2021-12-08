@@ -21,13 +21,13 @@
         }
     }
 
-    public class RedTriangle : Red { }
-    public class RedCircle : Red { }
-    public class BlueSquare : Blue  { }
+    public sealed class RedTriangle : Red { }
+    public sealed class RedCircle : Red { }
+    public sealed class BlueSquare : Blue  { }
     
 
-    public class Red : Colour {}
-    public class Blue : Colour { }
+    public abstract class Red : Colour {}
+    public abstract class Blue : Colour { }
 
     public abstract class Colour : IShape { }
 
