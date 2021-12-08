@@ -13,7 +13,7 @@
         }
     }
 
-    public class ShapeBucket<T>
+    public class ShapeBucket<T> where T : Colour
     {
         public void AddShape<T2>(T2 colouredShape) where T2 : T
         {
